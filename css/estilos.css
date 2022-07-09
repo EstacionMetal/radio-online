@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url(../imagenes/Background.jpg;
+  font-family: heartless;
+  background-repeat: repeat;
+}
+
+body img{
+  margin: auto;
+  padding: 20px;
+  margin: auto;
+}
+
+.contenedor{
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header{
+  background: #C52604;
+  margin:20px 0;
+}
+
+header h1{
+  color: #120E0E;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.main{
+  width: 70%;
+  background:#F61212;
+  padding: 20px;
+  float: left;
+  box-sizing: border-box;
+}
+
+.main img{
+  width: 100%;
+  height: auto;
+}
+
+aside{
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #ccc;
+  float: right;
+}
+
+footer{
+  clear: both;
+  float: left;
+  margin-top: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  background: #000;
+}
+
+@media screen and (max-width:800px){
+  .main{
+    width: 100%;
+  }
+
+  aside{
+    width:100%;
+  }
+}
+
+.post-list{
+  background: #ccc;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 15px;
+}
+
+.content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.post{
+  box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .1);
+  overflow: hidden;
+  transition: .2s;
+}
+
+.post:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 1px 14px 2px rgba(0, 0, 0, .15);
+}
+
+.post-header{
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.post-body{
+  padding: 15px;
+  text-align: center;
+}
+
+.post-body span{
+  display: inline-block;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.post-body h2{
+  margin-bottom: 15px;
+}
+
+.post-body p{
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.post-body .post-link{
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  background: #2b6ebb;
+  color: #fff;
+  width: 50%;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
+  transition: .2S;
+}
+
+.post-body .post-link:hover{
+  background: #3378c7;
+  box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .2);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 840px){
+  .content{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px){
+  .content{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
