@@ -5,7 +5,7 @@
 }
 
 body{
-  background: url(../imagenes/Background.jpg;
+  background: url(../imagenes/Background.jpg);
   font-family: heartless;
   background-repeat: repeat;
 }
@@ -16,14 +16,14 @@ body img{
   margin: auto;
 }
 
-.contenedor{
+.contenedor {
   width: 80%;
   max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
 }
 
-header{
+header {
   background: #C52604;
   margin:20px 0;
 }
