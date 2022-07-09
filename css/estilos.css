@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 
-body{
+.body{
   background: url(../imagenes/Background.jpg);
   font-family: heartless;
   background-repeat: repeat;
 }
 
-body img{
+.body img{
   margin: auto;
   padding: 20px;
   margin: auto;
@@ -71,7 +71,7 @@ footer{
     width: 100%;
   }
 
-  aside{
+.aside{
     width:100%;
   }
 }
